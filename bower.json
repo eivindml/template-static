@@ -1,0 +1,20 @@
+{
+  "name": "web-template",
+  "description": "Starting point for static web apps.",
+  "main": "app.js",
+  "authors": [
+    "Eivind Lindbråten <eivind.lindbraaten@gmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "template"
+  ],
+  "homepage": "https://github.com/WaysAS/web-template",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
