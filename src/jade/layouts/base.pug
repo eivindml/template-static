@@ -4,36 +4,22 @@ html(lang="no")
   //- TODO: Refactor out all config variables to single file
 
   //- Compile-time config variables
-  $title = "Mastiff"
-  $keywords = "Mastiff, TV, Produksjon"
-  $description = "Vi skaper innhold som folk bryr seg om"
-  $current_element = "el".get_queried_object_id()
-  $post_type = get_post_type( get_the_ID() )
-
-  //- Set page/template part spesific variables
-  block variables
-    //- Sets class for body element
-    $body_classes = ''
+  $title = ""
 
   head
     title!=$title
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
-    script(src="/wp-content/themes/mastiff/build/js/main.js")
+    script(src="/build/js/main.js")
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css')
-    link(rel='stylesheet', href='/wp-content/themes/mastiff/style.css')
+    link(rel='stylesheet', href='')
 
-  body(class!=$body_classes)
-    include components/header
-
-    block hero
-
-    content#content
-      block content
-
-    include components/footer
-
-    //- Loads modal components
-    //- TODO: Try to refactor this out so it don't need to be included here.
-    include components/modals
+  body
+    // Module: Header
+    .header
+      .header--logo
+      .header--nav
+        ul
+          li Item One
+          li Item Two
