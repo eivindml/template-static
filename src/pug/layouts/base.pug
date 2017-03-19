@@ -1,25 +1,32 @@
 doctype html
 html(lang="no")
 
-  //- TODO: Refactor out all config variables to single file
-
-  //- Compile-time config variables
-  $title = ""
+  //- Config Variables
+  - var title = "Title"
 
   head
-    title!=$title
+    title #{title}
+
+    //- Meta
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
-    script(src="/build/js/main.js")
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css')
-    link(rel='stylesheet', href='')
+    //- CSS
+    link(rel='stylesheet', href='css/main.css')
+    //- JS
+    script(src="js/main.js")
 
   body
     // Module: Header
     .header
       .header--logo
+        p 🏴
       .header--nav
         ul
-          li Item One
-          li Item Two
+          li Menu Item I
+          li Menu Item II
+
+    block content
+
+    // Module: Footer
+    .footer
+      p FooterContent

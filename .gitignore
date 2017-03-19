@@ -38,6 +38,5 @@ bower_components
 .node_repl_history
 
 # Custom
-public_html/
+# public_html/
 .DS_Store/
-.DS_Store

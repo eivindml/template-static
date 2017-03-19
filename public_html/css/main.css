@@ -1,0 +1,233 @@
+/* Colors */
+/* Dimensions */
+/* Based on SMACSS, Naming based on BEM with own syntax */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+input, label, select, button, textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  /* Browsers have different default form fonts */
+  font-size: 13px;
+  font-family: Arial; }
+
+/* Remove the stupid outer glow in Webkit */
+input {
+  box-sizing: border-box;
+  -webkit-appearance: none; }
+  input:focus {
+    outline: 0; }
+
+/* Box Sizing Reset */
+/* All of our custom controls should be what we expect them to be */
+textarea {
+  box-sizing: border-box; }
+
+/* These elements are usually rendered a certain way by the browser */
+button {
+  box-sizing: border-box; }
+
+input[type=reset], input[type=button], input[type=submit], input[type=checkbox], input[type=radio] {
+  box-sizing: border-box; }
+
+select {
+  box-sizing: border-box; }
+
+/* Text Inputs */
+input[type=checkbox], input[type=radio] {
+  width: 13px;
+  height: 13px; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box; }
+
+/* Make webkit render the search input like a normal text field */
+/* Turn off the recent search for webkit. It adds about 15px padding on the left */
+::-webkit-search-decoration {
+  display: none; }
+
+/* Buttons */
+button {
+  /* Fix IE7 display bug */
+  overflow: visible;
+  width: auto; }
+
+input[type="reset"], input[type="button"], input[type="submit"] {
+  /* Fix IE7 display bug */
+  overflow: visible;
+  width: auto; }
+
+/* IE8 and FF freak out if this rule is within another selector */
+::-webkit-file-upload-button {
+  padding: 0;
+  border: 0;
+  background: none; }
+
+/* Textarea */
+textarea {
+  /* Move the label to the top */
+  vertical-align: top;
+  /* Turn off scroll bars in IE unless needed */
+  overflow: auto; }
+
+/* Selects */
+select[multiple] {
+  /* Move the label to the top */
+  vertical-align: top; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input, label, select, button, textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  /* Browsers have different default form fonts */
+  font-size: 13px;
+  font-family: Arial; }
+
+/* Remove the stupid outer glow in Webkit */
+input {
+  box-sizing: border-box;
+  -webkit-appearance: none; }
+  input:focus {
+    outline: 0; }
+
+/* Box Sizing Reset */
+/* All of our custom controls should be what we expect them to be */
+textarea {
+  box-sizing: border-box; }
+
+/* These elements are usually rendered a certain way by the browser */
+button {
+  box-sizing: border-box; }
+
+input[type=reset], input[type=button], input[type=submit], input[type=checkbox], input[type=radio] {
+  box-sizing: border-box; }
+
+select {
+  box-sizing: border-box; }
+
+/* Text Inputs */
+input[type=checkbox], input[type=radio] {
+  width: 13px;
+  height: 13px; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box; }
+
+/* Make webkit render the search input like a normal text field */
+/* Turn off the recent search for webkit. It adds about 15px padding on the left */
+::-webkit-search-decoration {
+  display: none; }
+
+/* Buttons */
+button {
+  /* Fix IE7 display bug */
+  overflow: visible;
+  width: auto; }
+
+input[type="reset"], input[type="button"], input[type="submit"] {
+  /* Fix IE7 display bug */
+  overflow: visible;
+  width: auto; }
+
+/* IE8 and FF freak out if this rule is within another selector */
+::-webkit-file-upload-button {
+  padding: 0;
+  border: 0;
+  background: none; }
+
+/* Textarea */
+textarea {
+  /* Move the label to the top */
+  vertical-align: top;
+  /* Turn off scroll bars in IE unless needed */
+  overflow: auto; }
+
+/* Selects */
+select[multiple] {
+  /* Move the label to the top */
+  vertical-align: top; }
+
+.l-float-left {
+  float: left; }
+
+.l-float-right {
+  float: right; }
+
+.l-clear {
+  clear: both; }
+
+.l-constrained {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.is-open {
+  display: block; }
+
+.is-closed {
+  display: none; }
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .nav--item {
+    margin-left: 30px; }
+
+/* @import shame-should never exist (file for shameful SASS to be refactored. Check Git Blame to find the person guilty). */
