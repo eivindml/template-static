@@ -45,9 +45,10 @@ gulp.task('watch', ['sass'], function() {
     browserSync.init({
         server: dist
     });
-    gulp.watch("src/sass/*.sass", ['sass-watch']);
-    gulp.watch("src/javascript/*.js", ['static-watch']);
+    gulp.watch("src/sass/**/*.sass", ['sass-watch']);
     gulp.watch("src/pug/**/*.{pug,md}", ['pug-watch']);
+    gulp.watch("src/javascript/**/*.js", ['static-watch']);
+    gulp.watch("src/images/**/*.{png,svg,jpg,gif}", ['static-watch']);
 });
 
 // DEPLOY PROJECT USING FTP
