@@ -1,15 +1,14 @@
 {
   "name": "template-static",
   "description": "Starting point for static web apps.",
-  "main": "app.js",
   "authors": [
-    "Eivind Lindbråten <eivind.lindbraaten@gmail.com>"
+    "Eivind Lindbråten <eivind.lindbraten@gmail.com>"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "keywords": [
     "template"
   ],
-  "homepage": "https://github.com/WaysAS/web-template",
+  "homepage": "https://github.com/eivindml/template-static",
   "ignore": [
     "**/.*",
     "node_modules",

@@ -4,7 +4,7 @@ Minimalist starting point for web project using pug (formerly Jade), sass (with 
 
 ## Prerequisite
 - npm
-- bower `npm install -g bower`
+- bower
 
 ## How to Run
 - Clone repo.
