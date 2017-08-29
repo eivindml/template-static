@@ -1,12 +1,13 @@
 {
   "name": "template-static",
-  "description": "Starting point for static web apps.",
+  "description": "Starting template for static web apps.",
   "authors": [
     "Eivind Lindbråten <eivind.lindbraten@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
-    "template"
+    "template",
+    "static"
   ],
   "homepage": "https://github.com/eivindml/template-static",
   "ignore": [

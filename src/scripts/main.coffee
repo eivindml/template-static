@@ -1,2 +1,1 @@
-# Functions:
-square = (x) -> x * x
+# Author: Eivind Lindbråten
